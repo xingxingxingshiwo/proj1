@@ -7,6 +7,11 @@
 <script>
 // @ is an alias to /src
 export default {
-
+  data () {
+    return {
+      msg: 'hello vue'
+    }
+  },
+  components: {}
 }
 </script>

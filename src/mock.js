@@ -32,7 +32,14 @@ if (doMock) {
     // 可以在console看到当前list情况
     console.log(list)
   })
+
   Mock.mock(/\/api\/list/, 'post', ({ url, type, body }) => {
+    return list[maxId]
+  })
+  console.log(list)
+
+  Mock.mock(/\/api\/all/, 'post', ({ url, type, body }) => {
     return list
   })
+  console.log(list)
 }

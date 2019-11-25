@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     欢迎使用通讯录
-      </div>
+  </div>
 </template>
 
 <script>

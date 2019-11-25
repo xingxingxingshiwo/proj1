@@ -1,10 +1,12 @@
 <template>
     <div id="app">
+      <div id="nav">
         <router-link to="/index">首页</router-link>
         <router-link to="/New">新增</router-link>
         <router-link to="/search">查找</router-link>
         <router-link to="/manage">管理</router-link>
         <router-view></router-view>
+    </div>
     </div>
 </template>
 

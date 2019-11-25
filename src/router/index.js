@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import New from '@/views/New.vue'
 import Manage from '@/views/Manage.vue'
 import Search from '@/views/Search.vue'
+
 // import About from '@/views/About.vue'
 
 Vue.use(VueRouter)
@@ -43,5 +44,10 @@ const routes = [
 const router = new VueRouter({
   routes
 })
-
 export default router
+
+const M = {
+  install (Vue) {
+    Vue.component('Manage', M)
+  }
+}
